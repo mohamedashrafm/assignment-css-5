@@ -1,0 +1,126 @@
+.text-gray {
+    color: gray;
+}
+ *{
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+.about::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: blue;
+    bottom: -12px;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+}
+
+.portfolio img {
+    margin: auto;
+    transition: transform 1s;
+    /* transform-origin: top left; */
+}
+
+.portfolio img:hover {
+    transform: scale(1.1);
+}
+
+/* .counter-hight{
+    height: 500px;
+ } */
+.counter-hight .row {
+    min-height: 500px;
+    padding: 30px 20px;
+
+}
+
+.service .card .icon-circle {
+    transition: .5s;
+    border: 10px solid #0075ff !important;
+}
+
+.service .card:hover .icon-circle {
+    color: aliceblue;
+    background-color: blue;
+    border: 10px solid #ffffffc3 !important;
+
+
+
+}
+
+.travel {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.travel h6 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    padding: 5px;
+}
+
+.contact h3{
+    position: relative;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+.contact h3::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #0075ff;
+    left: 0;
+    bottom: -10px;
+}
+
+/* TITLES PAGES */
+
+.title{
+    position: relative;
+    margin: 70px 0;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    width: 1.3cm;
+    height: 5px;
+    background-color: #0075ff;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+
+/* swipper */
+
+#carouselExampleDark{
+    min-height: 400px !important;
+    background: linear-gradient(0deg, rgba(34, 0, 255, 0.3) 0%, rgba(0, 17, 255, 0.77) 100%), url(../images/overlay-bg.jpg);
+    padding: 2.3cm 0 ;
+    margin: 30px 0;
+}
+.carousel-item  {
+    min-height: 400px !important;
+}
+.carousel-indicators button{
+    border-radius: 50% !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #fff !important;
+}
+.hero-content .hero-subtitle p{
+    display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+}
+ 
